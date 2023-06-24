@@ -1,0 +1,16 @@
+{
+   "params":
+   {
+    "local_serrver":"True",
+    "local_uri":"mysql://root:@localhost/chooseyourtech",
+    "prod_uri": "mysql://root:@localhost/chooseyourtech",
+    "fb_url":"https://facebook.com",
+    "tw_url":"https://twitter.com/codeit_abhi",
+    "gt_url":"https://github.com",
+    "no_of_posts": 4,
+    "login_image":"login.svg",
+    "admin_user":"Abhi",
+    "admin_password": "BestDeveloperInTheWorld"
+   
+   }
+}

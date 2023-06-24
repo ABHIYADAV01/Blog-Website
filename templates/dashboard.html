@@ -1,0 +1,49 @@
+{% extends 'layout.html'%} {% block content %}
+<!-- Page Header-->
+<header
+  class="masthead"
+  style="background-image: url('../static/assets/img/home-bg.jpg')"
+>
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="site-heading">
+          <h1>ChooseYourTech</h1>
+          <span class="subheading">A Blog Theme for techie's</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Main Content-->
+<div class="container px-4 px-lg-5">
+  <div class="row gx-4 gx-lg-5 justify-content-center">
+    <div class="col-md-10 col-lg-8 col-xl-7">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Sl_no</th>
+            <th>Title</th>
+            <th>Date</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {% for post in posts %}
+          <tr>
+            <td>{{post.sno}}</td>
+            <td>{{post.title}}</td>
+            <td>{{post.date}}</td>
+            <td><a href="/edit/{{post.sno}}"><button class="btn  btn-success btn-sm">Edit</button></a></td>
+            <td><button class="btn  btn-danger btn-sm">Delete</button></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}
